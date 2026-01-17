@@ -1,29 +1,29 @@
-// model/AbstractTask.java
 package model;
 
-public abstract class AbstractTask {
-    protected int taskId;
-    protected String taskName;
-    protected String taskDescription;
+public class Task extends AbstractTask {
+    private String status;
 
-    public AbstractTask() {}
+    public static final String DONE = "DONE";
+    public static final String ONGOING = "ONGOING";
+    public static final String NOT_STARTED = "NOT STARTED";
 
-    public AbstractTask(int taskId, String taskName, String taskDescription) {
-        this.taskId = taskId;
-        this.taskName = taskName;
-        this.taskDescription = taskDescription;
+    public Task() {
+        this.status = NOT_STARTED;
     }
 
-    public int getTaskId() { return taskId; }
-    public void setTaskId(int taskId) { this.taskId = taskId; }
-
-    public String getTaskName() { return taskName; }
-    public void setTaskName(String taskName) { this.taskName = taskName; }
-
-    public String getTaskDescription() { return taskDescription; }
-    public void setTaskDescription(String taskDescription) {
-        this.taskDescription = taskDescription;
+    public Task(int id, String name, String desc, String status) {
+        super(id, name, desc);
+        this.status = status;
     }
+
+    @Override
+    public String getStatus() { return status; }
+
+    @Override
+    public void setStatus(String status) {
+        this.status = status;
+    }
+}
 
     public abstract String getStatus();
     public abstract void setStatus(String status);
