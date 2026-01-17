@@ -1,4 +1,3 @@
-// model/AbstractTask.java
 package model;
 
 public abstract class AbstractTask {
