@@ -13,7 +13,7 @@ public class MainWindow extends JFrame {
     private JTable table;
     private DefaultTableModel tableModel;
 
-    private TaskForm taskForm; // SINGLE INSTANCE
+    private TaskForm taskForm; // single instance only
 
     public MainWindow(TaskManager manager) {
 
@@ -48,7 +48,7 @@ public class MainWindow extends JFrame {
         add(new JScrollPane(table), BorderLayout.CENTER);
     }
 
-    // Refresh JTable
+    // We can refresh JTable through this
     public void refreshTable() {
 
         tableModel.setRowCount(0);
