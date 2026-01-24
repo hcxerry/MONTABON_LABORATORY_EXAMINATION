@@ -4,7 +4,7 @@ public class Task extends AbstractTask {
 
     private String status;
 
-    // Allowed Values
+    // These are only the allowed values
     public static final String DONE = "DONE";
     public static final String ONGOING = "ONGOING";
     public static final String NOT_STARTED = "NOT STARTED";
@@ -14,7 +14,8 @@ public class Task extends AbstractTask {
         setStatus(status);
     }
 
-    // Override Status Getter and Setter
+    
+    // Overriding the status getter & setter
     @Override
     public String getStatus() {
         return status;
