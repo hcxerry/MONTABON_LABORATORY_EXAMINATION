@@ -11,17 +11,17 @@ public class TaskManager {
         taskList = new ArrayList<>();
     }
 
-    // Add Task
+    // For adding tasks
     public void addTask(Task task) {
         taskList.add(task);
     }
 
-    // View Tasks
+    // For viewing tasks
     public ArrayList<Task> getTasks() {
         return taskList;
     }
 
-    // Generate Task ID
+    // For generating Task ID
     public int generateTaskId() {
         if (taskList.isEmpty()) {
             return 1001;
