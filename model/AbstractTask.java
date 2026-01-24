@@ -5,23 +5,23 @@ public abstract class AbstractTask {
     protected int taskId;
     protected String taskName;
     protected String taskDescription;
-
-    // Default Constructor
+    // This is the default constructor
     public AbstractTask() {
     }
 
-    // Parameterized Constructor
+    
+    // This is the parameterized constructor
     public AbstractTask(int taskId, String taskName, String taskDescription) {
         this.taskId = taskId;
         this.taskName = taskName;
         this.taskDescription = taskDescription;
     }
 
-    // Abstract Getter and Setter for Status
+    // I used abstract getter & setter for status
     public abstract String getStatus();
     public abstract void setStatus(String status);
 
-    // Normal Getters and Setters
+    // more normal getters and setters
     public int getTaskId() {
         return taskId;
     }
