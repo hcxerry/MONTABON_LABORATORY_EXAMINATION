@@ -6,6 +6,7 @@ import model.Task;
 import javax.swing.*;
 import java.awt.*;
 
+
 public class TaskForm extends JFrame {
 
     private TaskManager taskManager;
@@ -58,7 +59,7 @@ public class TaskForm extends JFrame {
 
     private void saveTask() {
 
-        // VALIDATION
+        // for validation
         if (txtName.getText().trim().isEmpty() ||
             txtDesc.getText().trim().isEmpty()) {
 
@@ -81,16 +82,16 @@ public class TaskForm extends JFrame {
             status = Task.NOT_STARTED;
         }
 
-        // Create Task Object
+        // Creating task object
         Task task = new Task(id, name, desc, status);
 
-        // Pass to TaskManager
+        // Passing to TaskManager
         taskManager.addTask(task);
 
-        // Refresh JTable
+        // Refreshing the JTable
         mainWindow.refreshTable();
 
-        // Close Form
+        // Closing the Form
         dispose();
     }
 }
