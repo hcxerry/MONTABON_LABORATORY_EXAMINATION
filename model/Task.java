@@ -4,7 +4,7 @@ public class Task extends AbstractTask {
 
     private String status;
 
-    // These are only the allowed values
+    // These are the only allowed values
     public static final String DONE = "DONE";
     public static final String ONGOING = "ONGOING";
     public static final String NOT_STARTED = "NOT STARTED";
