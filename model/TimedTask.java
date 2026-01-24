@@ -11,7 +11,7 @@ public class TimedTask extends Task {
         this.estimatedMinutes = estimatedMinutes;
     }
 
-    // Encapsulation
+    // Encapsulation is used here
     public int getEstimatedMinutes() {
         return estimatedMinutes;
     }
