@@ -4,7 +4,6 @@ import model.Task;
 import java.util.ArrayList;
 
 public class TaskManager {
-
     private ArrayList<Task> taskList;
 
     public TaskManager() {
